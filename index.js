@@ -39,11 +39,18 @@ const calc = function() {
        
     return { 
         populateNums(entry){
-            if (nums[nums.length - 1 ] == "/" && entry == 0) {
+            //Throwing errors 
+            let lastEntry = nums[nums.length - 1]; 
+            if (lastEntry == "/" && entry == 0) {
                 errorText.textContent= "You cannot divide by 0! Try again."; 
                 throw Error("You cannot divide by 0! Try again."); 
+            } else if ((lastEntry == "/" || lastEntry == "*" || lastEntry == "+" || lastEntry == "-" ) && (entry == "/" || 
+            entry == "*" || entry == "+" || entry == "-" )) {
+                errorText.textContent = "You have to enter a number after an operator! Try again."; 
+                throw Error("You have to enter a number after an operator! Try again."); 
             }
 
+            //Logic 
             if (entry == "/" || entry == "*" || entry == "+" || entry == "-" || entry == "=" || entry == "%") {
                 nums.push(currentNum); 
                 nums.push(entry); 
