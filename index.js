@@ -162,11 +162,8 @@ let example =  calc();
 //3. How do I create an instance of the calc for eventlistener? Can/should I use some sort of onClick func instead? 
 
 //Wiring up front end 
-//1. Use CSS grid to fix whatever is going on with the calc buttons so they fill entire div? Why aren't the buttons currently stretching to fill it?
-//2. "Pressing = before entering all of the numbers or an operator could cause problems!"
-//3. Round decimal answers to 'long' decimals (round to 15 places?)
-//4. "Make it look nice! This is a great project to practice your CSS skills." 
-    //round edges of calculator?
-//5. "Add keyboard support! You might run into an issue where keys such as (/) might cause you some trouble. Read the MDN documentation for event.preventDefault to help solve this problem."
-//6. Something about delete last not working properly-- it deletes it from display at first but then it's still there on the running tally
+//1. "Pressing = before entering all of the numbers or an operator could cause problems!"
+//2. Round decimal answers to 'long' decimals (round to 15 places?)
+//3. "Add keyboard support! You might run into an issue where keys such as (/) might cause you some trouble. Read the MDN documentation for event.preventDefault to help solve this problem."
+//4. Something about delete last not working properly-- it deletes it from display at first but then it's still there on the running tally
     //check if the actual num it produces is still correct (i.e. the actual operator is working correctly and it's just a bug w running tally)
