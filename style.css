@@ -1,0 +1,75 @@
+/* * {
+    border: 1px blue solid; 
+} */
+
+h1 { 
+    display: flex; 
+    justify-content: center; 
+}
+
+.num.operator {
+    background-color: darkblue; 
+    color: white; 
+}  
+
+.num {
+    background-color: rgb(255, 255, 255); 
+}
+
+.delete {
+    background-color: orange; 
+}
+
+button {
+    display: flex; 
+    align-items: stretch; 
+    flex-wrap: wrap; 
+}
+
+
+#display {
+    color: white; 
+}
+
+#runningTotal {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    color: hsl(0, 0%, 75%);
+}
+
+#errorText {
+    display: flex; 
+    justify-content: center; 
+    padding-bottom: 20px; 
+}
+
+.container {
+    display: flex; 
+    justify-content: center; 
+}
+
+.calc-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: column; 
+   /* align-items: stretch;  */
+
+   /* grid-template-columns: 1fr 1fr 1fr 1fr;  */
+   border: 3px black solid; 
+}
+
+.row {
+    display: flex; 
+    align-items: stretch; 
+}
+
+.display-window {
+    background-color: teal; 
+    height: 8vh; 
+    width: 25vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end; 
+    justify-content: space-between; 
+}
