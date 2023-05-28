@@ -2,10 +2,6 @@
     border: 1px blue solid; 
 } */
 
-h1 { 
-    display: flex; 
-    justify-content: center; 
-}
 
 .num.operator {
     background-color: darkblue; 
@@ -35,6 +31,7 @@ button {
 #display {
     color: white; 
     padding-bottom: 8px; 
+    padding-right: 5px; 
 }
 
 #runningTotal {
@@ -52,8 +49,8 @@ button {
 
 .container {
     display: flex; 
+    flex: 1; 
     justify-content: center; 
-
 }
 
 .calc-container {
@@ -65,7 +62,8 @@ button {
     display: flex; 
     flex-wrap: wrap; 
     flex-direction: column; 
-   border: 3px black solid; 
+   
+    border: 4px black solid; 
 }
 
 .row {
